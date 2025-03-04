@@ -1,10 +1,10 @@
-import st7565
+import st7565P
 import xglcd_font as font
 import math
 import time
 
-neato = font.XglcdFont('/home/pi/Pi-ST7565/fonts/Neato5x7.c', 5, 7)
-glcd = st7565.Glcd(rgb=[21, 20, 16])
+neato = font.XglcdFont('fonts/Neato5x7.c', 5, 7)
+glcd = st7565P.Glcd(rgb=[21, 20, 16])
 glcd.init()
 x0, y0 = 63, 31
 
